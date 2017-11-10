@@ -1,0 +1,1 @@
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Game1\obj\x86\Debug\Entities.csproj.CoreCompileInputs.cache

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/grasstile.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/playermodel1.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/path.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/base.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/Enemy1.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/towermenu.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/healthbarcolor.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/highlight.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turrettopcannon.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turrettopspike.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turretbasegold.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turretbasemetal.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turretbasestone.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turretbasewood.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/projectilespike.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/projectilecannonball.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turrettoparrow.png</File>
+    <File>C:/Users/gebruiker/Documents/Visual Studio 2017/Projects/Towerdefense/Towerdefense/Content/turrettopminigun.png</File>
+  </SourceFiles>
+</SourceFileCollection>
