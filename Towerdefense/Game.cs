@@ -20,6 +20,7 @@ namespace Towerdefense
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        
 
         // walkable player that creates / upgrades the turrets
         Player player;
@@ -75,7 +76,7 @@ namespace Towerdefense
             wave = new Wave();
             player = new Player(Content.Load<Texture2D>(@"playermodel1"));
             map = new Map(Content.Load<Texture2D>(@"grasstile"), Content.Load<Texture2D>(@"path"), Content.Load<Texture2D>(@"base"), Content.Load<Texture2D>(@"highlight"));
-            ingamegui = new IngameGUI(Content.Load<Texture2D>(@"towermenu"));
+            ingamegui = new IngameGUI(Content.Load<Texture2D>(@"towermenu"), Content.Load<Texture2D>(@"upgradebar"), Content.Load<Texture2D>(@"upgradebarfill"), Content.Load<SpriteFont>(@"TowerUIfont"));
             // setup for the map, loads all content into the game
             map.Setup();
 
@@ -220,8 +221,8 @@ namespace Towerdefense
 
             Texture2D textureprojectilespike = Content.Load<Texture2D>(@"projectilespike");
             Texture2D textureprojectilecannon = Content.Load<Texture2D>(@"projectilecannonball");
-            Texture2D textureprojectilearrow = Content.Load<Texture2D>(@"turretbasewood");
-            Texture2D textureprojectileminigun = Content.Load<Texture2D>(@"turretbasewood");
+            Texture2D textureprojectilearrow = Content.Load<Texture2D>(@"projectilearrow");
+            Texture2D textureprojectileminigun = Content.Load<Texture2D>(@"projectileminigun");
 
 
             turrettextures = new TurretTextures(texturebasewood, texturebasestone, texturebasemetal, texturebasegold, texturebarrelspike, texturebarrelcannon, texturebarrelarrow, texturebarrelminigun, textureprojectilespike, textureprojectilecannon, textureprojectilearrow, textureprojectileminigun);

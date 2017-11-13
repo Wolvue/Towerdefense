@@ -47,7 +47,7 @@ namespace Entities.Classes
         public void Shoot(List<Enemy> enemylist, float time )
         {
             
-            if (enemylist.Count >= 1 && (time - lasttime) >= 1 && target != null)
+            if (enemylist.Count >= 1 && (time - lasttime) >= 0.25 && target != null)
             {
                 Vector2 shotbox = new Vector2(turretbox.X + (turretbarrel.Width / 2),turretbox.Y +  (turretbase.Height / 2));
                 projectiles.Add(new Projectile(projectiletexture, shotbox, target.enemybox));
@@ -84,7 +84,7 @@ namespace Entities.Classes
                             shot.Update(target.enemybox);
                             if (target.enemybox.X + 30 >= shot.Position.X && target.enemybox.X <= shot.Position.X && target.enemybox.Y + 30 >= shot.Position.Y && target.enemybox.Y <= shot.Position.Y)
                             {
-                                target.Damage(5);
+                                target.Damage(2);
                                 projectiles.Remove(shot);
 
                                 if (target.Alive == false)

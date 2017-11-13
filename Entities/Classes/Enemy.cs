@@ -87,7 +87,7 @@ namespace Entities.Classes
             float healthpercentage = (health * 30) / maxhealth;
              
             int a = Convert.ToInt32(enemybox.X);
-            int b = Convert.ToInt32(enemybox.Y + 50);
+            int b = Convert.ToInt32(enemybox.Y + 35);
             Rectangle healthbarbox = new Rectangle(a,b, (int)healthpercentage, 5);
             batch.Draw(healthbartexture, healthbarbox, Color.Red);
             }

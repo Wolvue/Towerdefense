@@ -46,3 +46,8 @@ C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefen
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\projectilecannonball.xnb
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\turrettoparrow.xnb
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\turrettopminigun.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\projectilearrow.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\projectileminigun.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\TowerUIfont.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradebar.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradebarfill.xnb

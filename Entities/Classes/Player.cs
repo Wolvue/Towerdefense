@@ -100,7 +100,7 @@ namespace Entities.Classes
                 playermodelbox = new Vector2(playermodelbox.X + 2, playermodelbox.Y);
             }
 
-            if (currentkeypressed.IsKeyDown(Keys.Enter))
+            if (currentkeypressed.IsKeyDown(Keys.Space))
             {
                 foreach (var tile in tiles)
                 {
@@ -122,7 +122,7 @@ namespace Entities.Classes
 
         public void CreateTurret(Vector2 box, TurretTextures textures)
         {
-            turretlist.Add(new Turret(textures.Texturebasestone, textures.Texturebarrelspike, textures.Textureprojectilespike, box));
+            turretlist.Add(new Turret(textures.Texturebasegold, textures.Texturebarrelminigun, textures.Textureprojectileminigun, box));
         }
     }
 }
