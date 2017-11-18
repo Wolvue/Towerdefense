@@ -35,25 +35,7 @@ namespace Towerdefense
 
         KeyboardState keyboardstate;
 
-
-
-
-
-
-
-        private Vector2 vector;
-        private Vector2 vector2;
-        private float rotation;
-
-        private Vector2 vectortt = new Vector2(400,400);
-        private Vector2 vectortt2 = new Vector2(450, 400);
-        private Vector2 vectortt3 = new Vector2(500, 400);
-        private Vector2 vectortt4 = new Vector2(550, 400);
-
-        private List<Turret> turretlist;
-
-
-        private TurretTextures turrettextures;
+        TurretTextures turrettextures;
         
 
 
@@ -76,17 +58,13 @@ namespace Towerdefense
             wave = new Wave();
             player = new Player(Content.Load<Texture2D>(@"playermodel1"));
             map = new Map(Content.Load<Texture2D>(@"grasstile"), Content.Load<Texture2D>(@"path"), Content.Load<Texture2D>(@"base"), Content.Load<Texture2D>(@"highlight"));
-            ingamegui = new IngameGUI(Content.Load<Texture2D>(@"towermenu"), Content.Load<Texture2D>(@"upgradebar"), Content.Load<Texture2D>(@"upgradebarfill"), Content.Load<SpriteFont>(@"TowerUIfont"));
+            ingamegui = new IngameGUI(Content.Load<Texture2D>(@"towermenu"), Content.Load<Texture2D>(@"Statbar"), Content.Load<Texture2D>(@"upgradebarfill"), Content.Load<SpriteFont>(@"TowerUIfont"));
             // setup for the map, loads all content into the game
             map.Setup();
 
             PullTextures();
 
-            turretlist = new List<Turret>
-            {
 
-                new Turret(turrettextures.Texturebasemetal, turrettextures.Texturebarrelcannon, turrettextures.Textureprojectilecannon, vectortt)
-            };
 
 
 
@@ -116,9 +94,7 @@ namespace Towerdefense
 
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            vector = new Vector2(425, 425);
-            vector2 = new Vector2(22, 22);
-            rotation = 0.1f;
+
 
             
 
@@ -163,9 +139,7 @@ namespace Towerdefense
             // makes the enemies move towards the selected waypoint
             wave.MoveEnemies(timer.time);
             wave.CheckAliveEnemy();
-
-            rotation += 0.01f;
-
+            
             player.Updateturrets(timer.time, wave.enemylist);
 
 

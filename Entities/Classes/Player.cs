@@ -12,24 +12,24 @@ namespace Entities.Classes
 
     public class Player : Game
     {
-        public Texture2D playermodel;
-        public Vector2 playermodelbox;
-        public List<Turrettile> turrettiles;
-        public List<Turret> turretlist;
+        public Texture2D Playermodel { get; set; }
+        public Vector2 Playermodelbox { get; set; }
+        public List<Turrettile> Turrettiles { get; set; }
+        public List<Turret> Turretlist { get; set; }
 
 
         
 
         public Player(Texture2D playermodel)
         {
-            this.playermodel = playermodel;
-            playermodelbox = new Vector2(400, 300);
-            turretlist = new List<Turret>();
+            this.Playermodel = playermodel;
+            Playermodelbox = new Vector2(400, 300);
+            Turretlist = new List<Turret>();
         }
 
         public void DrawPlayer(SpriteBatch batch)
         {
-            batch.Draw(playermodel, playermodelbox, Color.White);
+            batch.Draw(Playermodel, Playermodelbox, Color.White);
         }
 
 
@@ -42,7 +42,7 @@ namespace Entities.Classes
         {
             foreach (var tile in tiles)
             {
-                if (tile.tilebox.X <= playermodelbox.X + 17 && tile.tilebox.Y <= playermodelbox.Y + 17 && tile.tilebox.X + 50 >= playermodelbox.X + 17 && tile.tilebox.Y + 50 >= playermodelbox.Y + 17)
+                if (tile.tilebox.X <= Playermodelbox.X + 17 && tile.tilebox.Y <= Playermodelbox.Y + 17 && tile.tilebox.X + 50 >= Playermodelbox.X + 17 && tile.tilebox.Y + 50 >= Playermodelbox.Y + 17)
                 {
                     tile.Highlighted = true;
                 }
@@ -58,7 +58,7 @@ namespace Entities.Classes
         public void Updateturrets(float timer, List<Enemy> enemylist)
         {
 
-                foreach (var tur in turretlist)
+                foreach (var tur in Turretlist)
                 {
                    tur.Shoot(enemylist, timer);
                    tur.Update(enemylist);
@@ -70,7 +70,7 @@ namespace Entities.Classes
         public void Drawturrets(SpriteBatch spriteBatch)
         {
 
-                foreach (var tur in turretlist)
+                foreach (var tur in Turretlist)
                 {
                     tur.Draw(spriteBatch);
                 }
@@ -82,22 +82,22 @@ namespace Entities.Classes
             // up
             if (currentkeypressed.IsKeyDown(Keys.W))
             {
-                playermodelbox = new Vector2(playermodelbox.X, playermodelbox.Y - 2);
+                Playermodelbox = new Vector2(Playermodelbox.X, Playermodelbox.Y - 2);
             }
             // left
             if (currentkeypressed.IsKeyDown(Keys.A))
             {
-                playermodelbox = new Vector2(playermodelbox.X - 2, playermodelbox.Y);
+                Playermodelbox = new Vector2(Playermodelbox.X - 2, Playermodelbox.Y);
             }
             // down
             if (currentkeypressed.IsKeyDown(Keys.S))
             {
-                playermodelbox = new Vector2(playermodelbox.X, playermodelbox.Y + 2);
+                Playermodelbox = new Vector2(Playermodelbox.X, Playermodelbox.Y + 2);
             }
             // right
             if (currentkeypressed.IsKeyDown(Keys.D))
             {
-                playermodelbox = new Vector2(playermodelbox.X + 2, playermodelbox.Y);
+                Playermodelbox = new Vector2(Playermodelbox.X + 2, Playermodelbox.Y);
             }
 
             if (currentkeypressed.IsKeyDown(Keys.Space))
@@ -122,7 +122,7 @@ namespace Entities.Classes
 
         public void CreateTurret(Vector2 box, TurretTextures textures)
         {
-            turretlist.Add(new Turret(textures.Texturebasegold, textures.Texturebarrelminigun, textures.Textureprojectileminigun, box));
+            Turretlist.Add(new Turret(textures.Texturebasegold, textures.Texturebarrelminigun, textures.Textureprojectileminigun, box));
         }
     }
 }

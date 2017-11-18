@@ -39,7 +39,7 @@ namespace Entities.Classes
             this.turretbox.Y = box.Y + 5;
             projectiles = new List<Projectile>();
             range = 150;
-
+            attackspeed = 5;
         }
 
 
@@ -47,7 +47,7 @@ namespace Entities.Classes
         public void Shoot(List<Enemy> enemylist, float time )
         {
             
-            if (enemylist.Count >= 1 && (time - lasttime) >= 0.25 && target != null)
+            if (enemylist.Count >= 1 && (time - lasttime) >= (1 / attackspeed) && target != null)
             {
                 Vector2 shotbox = new Vector2(turretbox.X + (turretbarrel.Width / 2),turretbox.Y +  (turretbase.Height / 2));
                 projectiles.Add(new Projectile(projectiletexture, shotbox, target.enemybox));
@@ -118,6 +118,27 @@ namespace Entities.Classes
 
         }
 
+        public void Upgrade(string type)
+        {
+            switch (type)
+            {
+                case "damage":
+
+
+                    break;
+
+                case "range":
+
+
+                    break;
+
+                case "attackspeed":
+
+
+                    break;
+            }
+            
+        }
         
         public void Draw(SpriteBatch spritebatch)
         {

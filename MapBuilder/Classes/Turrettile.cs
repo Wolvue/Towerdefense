@@ -12,7 +12,7 @@ namespace MapBuilder.Classes
 {
     public class Turrettile : Tile
     {
-        private Texture2D highlight;
+        private readonly Texture2D highlight;
 
         public bool Hasturret
         {

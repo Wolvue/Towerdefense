@@ -11,20 +11,20 @@ namespace Entities.Classes
 {
     public class Projectile
     {
-        public Texture2D texture;
+        public Texture2D Texture { get; set; }
         public Vector2 Position;
 
-        float rotation;
-        float projectileMoveSpeed;
+        private float rotation;
 
-        bool calcspeed;
-        float xspeed;
-        float yspeed;
+
+        private bool calcspeed;
+        private float xspeed;
+        private float yspeed;
 
         public Projectile(Texture2D texture, Vector2 pos, Vector2 target)
         {
-            this.texture = texture;
-            this.Position = pos;
+            Texture = texture;
+            Position = pos;
             calcspeed = false;
 
 
@@ -35,7 +35,7 @@ namespace Entities.Classes
 
         public void Draw(SpriteBatch batch)
         {
-            batch.Draw(texture, Position, null, Color.White, rotation, new Vector2(texture.Width / 2, texture.Height / 2), 1f, SpriteEffects.None, 0f);
+            batch.Draw(Texture, Position, null, Color.White, rotation, new Vector2(Texture.Width / 2, Texture.Height / 2), 1f, SpriteEffects.None, 0f);
         }
 
         public void Update(Vector2 target)

@@ -51,3 +51,7 @@ C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefen
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\TowerUIfont.xnb
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradebar.xnb
 C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradebarfill.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\Statbar.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradeC.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradeX.xnb
+C:\Users\gebruiker\Documents\Visual Studio 2017\Projects\Towerdefense\Towerdefense\bin\Windows\x86\Debug\Content\upgradeZ.xnb
